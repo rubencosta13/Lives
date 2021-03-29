@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Gestao de autenticacao</title>
+        <style>
+            .prompt {
+                font-size: 16px;
+                color: brown;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .container {
+                width: 50%;
+            }
+            .left-pane {
+                width: 50%;
+                float: left;
+            }
+            .right-pane {
+                width: 50%;
+                float: right;
+            }
+            .submit-name {
+                clear: both;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Gestao de login de utilizadores</h1>
+
+    <form method='GET' action="/getemail">
+        <div class="container">
+            <div class="prompt left-pane">
+                <span>Autentique-se com as suas credenciais</span>
+            </div>
+            <div class="right-pane">
+                <input type="text" id="firstname" name="firstname" placeholder="utilizador" />
+            </div>
+            <div class="left-pane">
+                <input type="password" id="password" name="password" placeholder="password" />
+            </div>
+        </div>
+        <div class="submit-name">
+            <input type="submit" value="Autenticar" />
+        </div>
+        </div>
+    </form>
+</body>
+</html>
